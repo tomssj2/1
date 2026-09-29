@@ -1,0 +1,40 @@
+/* Shared tokens for Funky Cow print pieces — same palette as the website. */
+@import url("fonts.css");
+
+:root {
+  --red: #c8102e;
+  --red-dark: #9e0c23;
+  --red-deep: #7a0a1b;
+  --cream: #fbf3e4;
+  --white: #ffffff;
+  --ink: #1d1d1f;
+  --turq: #1a8f99;
+  --turq-dark: #13666e;
+  --turq-soft: #d6f0ee;
+  --muted: #6b5f55;
+
+  --font-display: "Fira Sans Extra Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Fira Sans", Arial, sans-serif;
+  --font-script: "Pacifico", cursive;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: var(--font-body); color: var(--ink); background: var(--white); }
+
+.stripes { background: repeating-linear-gradient(90deg, var(--red) 0 12mm, var(--red-dark) 12mm 24mm); }
+
+.checker {
+  background-color: var(--white);
+  background-image:
+    linear-gradient(45deg, var(--ink) 25%, transparent 25%, transparent 75%, var(--ink) 75%),
+    linear-gradient(45deg, var(--ink) 25%, transparent 25%, transparent 75%, var(--ink) 75%);
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: .95;
+}
+.script { font-family: var(--font-script); font-weight: 400; }
