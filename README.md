@@ -13,6 +13,15 @@ script.js       mobile nav, menu tabs, EN / ΕΛ language toggle
 assets/logo.png logo
 ```
 
+## Hosting
+
+The site is hosted for free on GitHub Pages at **https://tomssj2.github.io/1/**.
+Every push to `claude/sleepy-gates-2rw66k` redeploys it automatically
+(see `.github/workflows/pages.yml`).
+
+One-time setup: in the repo on GitHub, go to **Settings → Pages** and set
+**Source** to **GitHub Actions**.
+
 ## Before going live, fill in
 
 - **Prices and menu items.** The current ones are examples. Edit them in `index.html`. Greek
