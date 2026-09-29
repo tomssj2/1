@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Funky Cow · Smash & Shakes · Naousa</title>
+  <meta name="description" content="Funky Cow — a family-owned American diner in Naousa, Greece. Smash burgers, thick milkshakes and crispy fries.">
+  <meta name="theme-color" content="#c8102e">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,700;0,900;1,900&family=Fira+Sans:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Funky Cow home">
+        <img src="assets/logo.png" alt="" width="52" height="52">
+        <span class="brand-name">Funky Cow</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#story" data-i18n="nav.story">Our Story</a>
+        <a href="#visit" data-i18n="nav.visit">Visit</a>
+        <a href="#jobs" data-i18n="nav.jobs">Jobs</a>
+        <button class="lang-toggle" type="button" aria-label="Switch language">
+          <span data-lang="en">EN</span> / <span data-lang="el">ΕΛ</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="checker checker-top" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Family-owned diner · Naousa, Greece</p>
+          <h1 class="hero-title">
+            <span data-i18n="hero.l1">Smash.</span>
+            <span data-i18n="hero.l2">Shake.</span>
+            <span class="accent" data-i18n="hero.l3">Repeat.</span>
+          </h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            Crispy-edged smash burgers pressed hot on the flat-top, thick hand-spun milkshakes
+            and a jukebox-worthy good time — straight out of a 1950s American diner.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary" data-i18n="hero.cta1">See the Menu</a>
+            <a href="#visit" class="btn btn-ghost" data-i18n="hero.cta2">Find Us</a>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <div class="badge-ring">
+            <img src="assets/logo.png" alt="Funky Cow logo — a cow in sunglasses and a red polka-dot bandana" width="360" height="360">
+          </div>
+          <span class="sticker sticker-1" data-i18n="hero.sticker1">Fresh beef daily!</span>
+          <span class="sticker sticker-2" data-i18n="hero.sticker2">Hand-spun shakes</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Smash Burgers</span><span>★</span><span>Milkshakes</span><span>★</span><span>Crispy Fries</span><span>★</span><span>Naousa</span><span>★</span>
+        <span>Smash Burgers</span><span>★</span><span>Milkshakes</span><span>★</span><span>Crispy Fries</span><span>★</span><span>Naousa</span><span>★</span>
+      </div>
+    </div>
+
+    <!-- ============ MENU ============ -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <header class="section-head">
+          <p class="script">Today's Specials</p>
+          <h2 data-i18n="menu.title">The Menu</h2>
+          <p class="section-sub" data-i18n="menu.sub">Every burger is smashed to order on a screaming-hot griddle for that crunchy, caramelized crust.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Menu categories">
+          <button role="tab" aria-selected="true" aria-controls="tab-burgers" id="t-burgers" data-i18n="menu.tab1">Burgers</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-shakes" id="t-shakes" tabindex="-1" data-i18n="menu.tab2">Shakes</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-sides" id="t-sides" tabindex="-1" data-i18n="menu.tab3">Sides</button>
+        </div>
+
+        <div class="menu-board">
+          <!-- Burgers -->
+          <div class="menu-panel" id="tab-burgers" role="tabpanel" aria-labelledby="t-burgers">
+            <article class="menu-item featured">
+              <span class="tag" data-i18n="menu.best">Best seller</span>
+              <div class="item-head"><h3>The Funky Classic</h3><span class="dots"></span><span class="price">€8.50</span></div>
+              <p data-i18n="menu.b1">Double smashed beef, American cheese, pickles, onions, Funky sauce, toasted brioche.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Single Smash</h3><span class="dots"></span><span class="price">€6.50</span></div>
+              <p data-i18n="menu.b2">One crispy patty, cheese, ketchup, mustard, pickles. Simple and perfect.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Bacon Moo-ver</h3><span class="dots"></span><span class="price">€9.50</span></div>
+              <p data-i18n="menu.b3">Double beef, crispy bacon, cheddar, caramelized onions, smoky BBQ sauce.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Rock 'n' Roll Jalapeño</h3><span class="dots"></span><span class="price">€9.00</span></div>
+              <p data-i18n="menu.b4">Double beef, pepper jack, pickled jalapeños, chipotle mayo. Brings the heat.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Greek Diner</h3><span class="dots"></span><span class="price">€9.00</span></div>
+              <p data-i18n="menu.b5">Double beef, grilled graviera cheese, tomato, red onion, oregano-yogurt sauce.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Crispy Chick</h3><span class="dots"></span><span class="price">€8.50</span></div>
+              <p data-i18n="menu.b6">Buttermilk fried chicken, slaw, pickles, honey-mustard mayo.</p>
+            </article>
+          </div>
+
+          <!-- Shakes -->
+          <div class="menu-panel" id="tab-shakes" role="tabpanel" aria-labelledby="t-shakes" hidden>
+            <article class="menu-item featured">
+              <span class="tag" data-i18n="menu.fav">Fan favorite</span>
+              <div class="item-head"><h3>Strawberry Cow</h3><span class="dots"></span><span class="price">€5.50</span></div>
+              <p data-i18n="menu.s1">Real strawberries, vanilla ice cream, whipped cream and a cherry on top.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Classic Vanilla</h3><span class="dots"></span><span class="price">€5.00</span></div>
+              <p data-i18n="menu.s2">Thick, creamy, old-school vanilla bean.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Triple Chocolate</h3><span class="dots"></span><span class="price">€5.50</span></div>
+              <p data-i18n="menu.s3">Chocolate ice cream, fudge swirl, chocolate chunks.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Cookies & Cream</h3><span class="dots"></span><span class="price">€5.50</span></div>
+              <p data-i18n="menu.s4">Crushed cookies blended into vanilla, extra crumbs on top.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Salted Caramel Pretzel</h3><span class="dots"></span><span class="price">€6.00</span></div>
+              <p data-i18n="menu.s5">Caramel ice cream, sea salt, crunchy pretzel pieces.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Pistachio Dream</h3><span class="dots"></span><span class="price">€6.00</span></div>
+              <p data-i18n="menu.s6">Aegina pistachio cream, vanilla, crushed pistachios.</p>
+            </article>
+          </div>
+
+          <!-- Sides -->
+          <div class="menu-panel" id="tab-sides" role="tabpanel" aria-labelledby="t-sides" hidden>
+            <article class="menu-item featured">
+              <span class="tag" data-i18n="menu.must">Must try</span>
+              <div class="item-head"><h3>Funky Fries</h3><span class="dots"></span><span class="price">€4.50</span></div>
+              <p data-i18n="menu.f1">Loaded with cheese sauce, crispy onions and Funky sauce.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Classic Fries</h3><span class="dots"></span><span class="price">€3.00</span></div>
+              <p data-i18n="menu.f2">Golden, crispy, salted just right.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Onion Rings</h3><span class="dots"></span><span class="price">€4.00</span></div>
+              <p data-i18n="menu.f3">Beer-battered and served with ranch.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Nuggets (6)</h3><span class="dots"></span><span class="price">€4.50</span></div>
+              <p data-i18n="menu.f4">Crispy chicken bites with your choice of dip.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3>Soft Drinks</h3><span class="dots"></span><span class="price">€2.00</span></div>
+              <p data-i18n="menu.f5">Cola, lemonade, orange soda or water.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-head"><h3 data-i18n="menu.combo">Make it a Combo</h3><span class="dots"></span><span class="price">+€4.00</span></div>
+              <p data-i18n="menu.f6">Add classic fries and a soft drink to any burger.</p>
+            </article>
+          </div>
+        </div>
+        <p class="menu-note" data-i18n="menu.note">Ask us about allergens. Prices include VAT.</p>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="section story" id="story">
+      <div class="container story-inner">
+        <div class="story-card">
+          <p class="script">Since day one</p>
+          <h2 data-i18n="story.title">A Family Affair</h2>
+          <p data-i18n="story.p1">
+            Funky Cow is a small, family-owned spot in the heart of Naousa. We fell in love with
+            the classic American diner — the red booths, the checkered floors, the sizzle of the
+            flat-top — and decided our town needed one of its own.
+          </p>
+          <p data-i18n="story.p2">
+            We keep it simple: quality beef smashed fresh to order, real ice cream shakes, and a
+            warm welcome for everyone who walks through the door. Pull up a stool — you're part
+            of the family now.
+          </p>
+          <ul class="features">
+            <li><span class="icon" aria-hidden="true">🍔</span><span data-i18n="story.f1">Smashed to order</span></li>
+            <li><span class="icon" aria-hidden="true">🥤</span><span data-i18n="story.f2">Real ice cream</span></li>
+            <li><span class="icon" aria-hidden="true">❤️</span><span data-i18n="story.f3">Family made</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="section visit" id="visit">
+      <div class="container">
+        <header class="section-head">
+          <p class="script">Come on in</p>
+          <h2 data-i18n="visit.title">Visit Us</h2>
+        </header>
+        <div class="visit-grid">
+          <div class="visit-card">
+            <h3 data-i18n="visit.where">Where</h3>
+            <p><strong>Funky Cow</strong><br><span data-i18n="visit.addr">Naousa, Greece</span></p>
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Funky+Cow+Naousa+Greece" target="_blank" rel="noopener" data-i18n="visit.map">Open in Maps</a>
+          </div>
+          <div class="visit-card">
+            <h3 data-i18n="visit.hours">Hours</h3>
+            <ul class="hours">
+              <li><span data-i18n="visit.d1">Mon – Thu</span><span>12:00 – 00:00</span></li>
+              <li><span data-i18n="visit.d2">Fri – Sat</span><span>12:00 – 02:00</span></li>
+              <li><span data-i18n="visit.d3">Sunday</span><span>13:00 – 00:00</span></li>
+            </ul>
+          </div>
+          <div class="visit-card">
+            <h3 data-i18n="visit.say">Say hi</h3>
+            <p data-i18n="visit.dm">Questions, big orders or just want to say hello? Send us a DM.</p>
+            <a class="btn btn-ghost-dark" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOBS ============ -->
+    <section class="section jobs" id="jobs">
+      <div class="checker checker-top" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head light">
+          <h2 class="jobs-title" data-i18n="jobs.title">Join the Funky Crew</h2>
+          <p class="section-sub" data-i18n="jobs.sub">We're hiring! Come flip, smash and shake with us.</p>
+        </header>
+        <div class="jobs-grid">
+          <div class="job-card">
+            <h3 data-i18n="jobs.r1">Kitchen / Grill</h3>
+            <p data-i18n="jobs.r1d">Prep and building burgers</p>
+          </div>
+          <div class="job-card">
+            <h3 data-i18n="jobs.r2">Cashier / Service</h3>
+            <p data-i18n="jobs.r2d">Assembly & packaging</p>
+          </div>
+        </div>
+        <p class="jobs-note" data-i18n="jobs.note">Kitchen experience is a plus.</p>
+        <div class="jobs-cta">
+          <a class="btn btn-cream" href="https://instagram.com/" target="_blank" rel="noopener" data-i18n="jobs.cta">Send us a DM</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.png" alt="" width="72" height="72">
+      <p class="footer-brand">Funky Cow <span>Smash ★ Shakes</span></p>
+      <p class="footer-small">© <span id="year">2026</span> Funky Cow · <span data-i18n="footer.made">Family-owned in Naousa, Greece</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
