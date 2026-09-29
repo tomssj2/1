@@ -100,7 +100,8 @@
 
     "visit.title": "Έλα να μας δεις",
     "visit.where": "Πού",
-    "visit.addr": "Νάουσα",
+    "visit.addr1": "Πλατεία Καρατάσου 4",
+    "visit.addr2": "Νάουσα",
     "visit.map": "Άνοιγμα χάρτη",
     "visit.hours": "Ωράριο",
     "visit.d1": "Δευ – Πεμ",

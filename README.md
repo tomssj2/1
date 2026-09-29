@@ -29,5 +29,3 @@ One-time setup: in the repo on GitHub, go to **Settings → Pages** and set
 - **Opening hours.** They are in the "Visit" section.
 - **Instagram link.** Two `https://instagram.com/` links point to Instagram's home page. Replace
   them with the shop's profile URL.
-- **Address / map.** The "Open in Maps" button searches for "Funky Cow Naousa Greece". Swap in
-  the exact Google Maps link once you have it.
